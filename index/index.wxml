@@ -1,0 +1,11 @@
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="../../img/background0.jpg" mode="aspectFill"></image>
+	<!--页面其它部分-->
+<button  bindtap = "gotoPage" class='goodbutton' >开始</button>
+<button class='text' hover-class="hover">
+晓
+风
+天
+气</button>
+</view>
