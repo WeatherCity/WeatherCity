@@ -1,1 +1,250 @@
 /* pages/inf/inf.wxss */
+/**index.wxss**/
+@import '../../font/font.wxss'; 
+page{
+  height:100%;
+}
+
+.content {
+  height: 500rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 微软雅黑,宋体;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.888);
+  font-size: 17px;
+  background-size:100% 100%
+  /*background-color: #F2F2F8*/
+}
+
+
+/**背景图片**/
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+
+/*当日天气*/
+.info {
+  width: 100%;
+  height: 160px;
+}
+
+/*城市和日期显示*/
+.city {
+  width: 100%;
+  text-align: center;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+/*周几*/
+.city .weekday {
+  float: left;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  width: 30%;
+}
+
+/*城市名称*/
+.city .cityName {
+  display:inline;
+  font-size: 50rpx;
+}
+
+/*日期*/
+.city .currentDate {
+  float: right;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 20rpx;
+  padding-right: 30rpx;
+  width: 30%;
+}
+
+/*实时温度块*/
+.temp {
+  margin: 20rpx 20rpx 0 0;
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+
+/*实时温度*/
+.currentTemp {
+  font-size: 120rpx;
+  line-height: 130rpx;
+  position: relative;
+  display:inline-block;
+  color: rgba(255, 255, 255, 0.888);
+}
+
+/*实时温度右侧部分*/
+.temp_right {
+  position: relative;
+  display: inline-block;
+  padding-left: 10rpx;
+  vertical-align: top;
+  text-align: left;
+}
+
+/*摄氏度符号*/
+.celsius {
+  font-size: 40rpx;
+  padding-top: 10rpx;
+  color: rgba(255, 255, 255, 0.888);
+}
+
+/*实时文字*/
+.realtime {
+  font-size: 30rpx;
+  padding-top: 5rpx;
+}
+
+/**天气图标**/
+.weatherIcon {
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 161rpx;
+  height: 161rpx;
+  border-radius: 50%;
+}
+
+/*类型*/
+.type {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*温度范围*/
+.tempRange {
+  font-weight: bold;
+  margin-top: 20rpx;
+  text-align: center;
+  padding-top:5rpx;
+}
+
+/*风向风速*/
+.wind {
+  font-weight: bold;
+  margin: 20rpx 0;
+  text-align: center;
+  padding-top:5rpx;
+}
+
+/*空气质量*/
+.air {
+  width: 35%;
+  font-weight: bold;
+  text-align: center;
+  padding: 5rpx;
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(0, 238, 0, 0.76);
+  background-color: rgba(0, 238, 0, 0.76);
+  border-radius: 10rpx
+}
+
+/*最近3天天气*/
+.forecast {
+  width: 100%;
+  display: flex;
+  margin-top: 480rpx;
+  align-self: flex-end;
+  padding-bottom: 30rpx;
+  font-weight: bold;
+}
+
+/*最近3天天气图标*/
+.forecastIcon {
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/*每一天的天气*/
+.next-day {
+  width: 30%;
+  height: 430rpx;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  margin: 0 10rpx;
+  border: 1px solid #4095af;
+  border-radius: 10rpx;
+  box-shadow: 7px 10px 15px #949494;
+}
+
+/*日期*/
+.date {
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #043667c0;
+  color: rgba(255, 255, 255, 0.888);
+}
+
+/*指数块*/
+.tips {
+  width: 90%;
+  padding: 10rpx;
+  margin: 30rpx auto;
+  border-radius: 10rpx;
+  border: 1px solid #4095af;
+  box-shadow: 9px 8px 15px #949494;
+}
+
+/*指数文字*/
+.index {
+  color: rgba(255, 255, 255, 0.888);
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/*描述*/
+.description {
+  line-height: 22px;
+  margin: 5px 0;
+}
+
+/*搜索区域*/
+.search-area {
+  display: flex;
+  padding: 1rem 0.5rem;
+}
+
+/*输入框*/
+.search-area input {
+  width: 60%;
+  height: 38px;
+  line-height: 38px;
+  
+  border: 1px solid rgba(204, 204, 204, 0.888);
+  box-shadow: 3px 3px 6px 0px rgba(204, 204, 204, 0.500);
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.777);
+  border-radius: 5px;
+  margin: 0 auto;  
+  display: flex;
+  padding-left: 30rpx;
+}
+
+/*按钮*/
+.search-area button {
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 2rpx;
+  background-color:rgba(48, 199, 43, 0.777);
+}

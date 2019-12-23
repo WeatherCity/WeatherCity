@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "window": {
+    "enablePullDownRefresh": "true",
+    "disableScroll": "false",
+    "onReachBottomDistance": "10"
+  }
 }
